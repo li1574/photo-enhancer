@@ -1,0 +1,41 @@
+# --- Build output -----------------------------------------------------------
+build/
+*/build/
+.gradle/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- Machine-specific -------------------------------------------------------
+# Holds the local Android SDK path; never portable.
+local.properties
+
+# --- Signing material -------------------------------------------------------
+# The release keystore is a private identity key. Generate your own with:
+#   keytool -genkeypair -v -keystore keystore/release.jks -keyalg RSA \
+#           -keysize 2048 -validity 10000 -alias photoenhancer
+*.jks
+*.keystore
+keystore/
+
+# --- IDE / editor -----------------------------------------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Packaged artifacts -----------------------------------------------------
+# The APK is a build output, not source. Publish it as a Release asset instead.
+*.apk
+*.aab
+*.ap_
+*.dex
+outputs/
+
+# --- Logs / scratch ---------------------------------------------------------
+*.log
+*.hprof
